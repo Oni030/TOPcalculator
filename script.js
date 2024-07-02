@@ -1,3 +1,5 @@
+const buttons = document.querySelector('.input-box');
+
 let num1 = null;
 let num2 = null;
 let operator = null;
@@ -32,3 +34,11 @@ function operate(num1, num2, operator) {
         return divide(num1, num2);
     };
 };
+
+buttons.addEventListener('click', event => {
+    const target = event.target;
+
+    if(target.tagName === 'BUTTON') {
+        console.log(target.innerText)
+    };
+});
