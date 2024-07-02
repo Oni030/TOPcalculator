@@ -7,6 +7,12 @@ html, body {
     align-items: center;
 }
 
+.display {
+    border: 1px solid lightgrey;
+    border-radius: 10%;
+    text-align: end;
+}
+
 .input-box {
     display: flex;
 }
