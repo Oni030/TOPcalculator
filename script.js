@@ -1,3 +1,4 @@
+const display = document.querySelector('.display');
 const buttons = document.querySelector('.input-box');
 
 let num1 = null;
