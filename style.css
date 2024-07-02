@@ -7,3 +7,11 @@ html, body {
     align-items: center;
 }
 
+.input-box {
+    display: flex;
+}
+
+.input-column {
+    display: flex;
+    flex-direction: column;
+}
