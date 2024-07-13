@@ -22,7 +22,10 @@ function divide(a, b) {
 };
 
 function operate(num1, num2, operator) {
-    if (operator === '+') {
+    if (num1 == '' || num2 == '' || operator == '') {
+        return 'Invalid operation';
+    } 
+    else if (operator === '+') {
         return add(num1, num2);
     }
     else if (operator === '-') {
@@ -82,7 +85,7 @@ buttons.addEventListener('click', event => {
             } else {
                 let result = operate(num1, num2, operator);
                 let resultLength = result.toString().length;
-                if(resultLength >= 11) {
+                if(typeof result === 'number' && resultLength >= 11) {
                     result = result.toPrecision(7)/1;
                 };
                 console.log('Result: ' + result);
