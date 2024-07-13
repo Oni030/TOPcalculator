@@ -1,9 +1,9 @@
 const display = document.querySelector('.display');
 const buttons = document.querySelector('.input-box');
 
-let num1 = null;
-let num2 = null;
-let operator = null;
+let num1 = '';
+let num2 = '';
+let operator = '';
 
 function add(a, b) {
     return a + b;
