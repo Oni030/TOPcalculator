@@ -19,9 +19,6 @@ function divide(a, b) {
 }
 
 function operate(num1, num2, operator) {
-    if (operator === null || operator === undefined) {
-        return alert('No operator specified');
-    };
     if (operator === '+') {
         return add(num1, num2);
     };
@@ -39,7 +36,25 @@ function operate(num1, num2, operator) {
 buttons.addEventListener('click', event => {
     const target = event.target;
 
-    if(target.tagName === 'BUTTON') {
-        console.log(target.innerText)
+    if(target.className.includes('num-btn')) {
+        if(operator !== '') {
+            if(num2 !== '') {
+                num2 += target.innerText;
+                display.innerText += target.innerText;
+            } else {
+                num2 = target.innerText;
+                display.innerText = target.innerText;
+            };
+            console.log('Num2: ' + num2);
+        } else {
+            if(num1 !== '') {
+                num1 += target.innerText;
+                display.innerText += target.innerText;
+            } else {
+                num1 = target.innerText;
+                display.innerText = target.innerText;
+            };
+            console.log('Num1: ' + num1);
+        };
     };
 });
