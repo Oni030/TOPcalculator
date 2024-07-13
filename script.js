@@ -71,4 +71,23 @@ buttons.addEventListener('click', event => {
             console.log('Operator: ' + operator);
         };
     };
+
+    if(target.className.includes('equal-btn')) {
+        if(operator !== '') {
+            if(operator === '/' && num2 == 0) {
+                display.innerText = "Invalid operation";
+            } else {
+                let result = operate(num1, num2, operator);
+                let resultLength = result.toString().length;
+                if(resultLength >= 11) {
+                    result = result.toPrecision(7)/1;
+                };
+                console.log('Result: ' + result);
+                display.innerText = result;
+            };
+            num1 = '';
+            num2 = '';
+            operator = '';
+        };
+    };
 });
