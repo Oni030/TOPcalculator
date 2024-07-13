@@ -90,4 +90,12 @@ buttons.addEventListener('click', event => {
             operator = '';
         };
     };
+
+    if(target.className.includes('clear-btn')) {
+        console.log('CLEAR');
+        display.innerText = '0';
+        num1 = '';
+        num2 = '';
+        operator = '';
+    };
 });
