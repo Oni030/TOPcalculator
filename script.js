@@ -57,4 +57,18 @@ buttons.addEventListener('click', event => {
             console.log('Num1: ' + num1);
         };
     };
+
+    if(target.className.includes('op-btn')) {
+        if(operator !== '') {
+            let result = operate(num1, num2, operator);
+            console.log('Interim result: ' + result);
+            display.innerText = result;
+            num1 = result;
+            num2 = '';
+            operator = target.innerText;
+        } else {
+            operator = target.innerText;
+            console.log('Operator: ' + operator);
+        };
+    };
 });
