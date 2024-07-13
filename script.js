@@ -6,16 +6,16 @@ let num2 = '';
 let operator = '';
 
 function add(a, b) {
-    return a + b;
+    return parseFloat(a) + parseFloat(b);
 }
 function subtract(a, b) {
-    return a - b;
+    return parseFloat(a) - parseFloat(b);
 }
 function multiply(a, b) {
-    return a * b;
+    return parseFloat(a) * parseFloat(b);
 }
 function divide(a, b) {
-    return a / b;
+    return parseFloat(a) / parseFloat(b);
 }
 
 function operate(num1, num2, operator) {
