@@ -18,12 +18,14 @@ html, body {
 }
 
 .display {
-    border: 1px solid lightgrey;
-    border-radius: 10%;
+    margin-bottom: 2%;
+    border: 2px solid black;
     text-align: end;
 }
 
 .input-box {
+    width: 100%;
+    height: 82%;
     display: flex;
 }
 
