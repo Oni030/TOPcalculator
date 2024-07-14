@@ -5,6 +5,8 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Dosis", sans-serif;
+    font-size: 64px;
 }
 
 .container {
