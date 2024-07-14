@@ -50,3 +50,20 @@ button {
     border: 2px solid black;
     border-radius: 10px;
 }
+
+.num-btn {
+    background: #084896;
+    color: white;
+}
+
+.op-btn {
+    background: #ff8c00;
+}
+
+.equal-btn {
+    background: #169608;
+}
+
+.clear-btn {
+    background: #ff0000;
+}
