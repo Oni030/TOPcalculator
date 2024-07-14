@@ -35,3 +35,11 @@ html, body {
     display: flex;
     flex-direction: column;
 }
+
+button {
+    height: 25%;
+    font-family: "Dosis", sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    
+}
